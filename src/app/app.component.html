@@ -1,0 +1,38 @@
+
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img
+    width="40"
+    alt="Angular Logo"
+    src="../assets/logo.png"
+  />
+  <span>Welcome</span>
+  <a routerLink="">Home</a>
+  <a *ngIf="isadmin" routerLink="/user">User</a>
+  <a routerLink="/customer">Customer</a>
+  <a routerLink="/product">Order</a>
+    <div class="spacer"></div>
+    
+    <a routerLink="/login">Logout</a>
+    <div class="spacer"></div>
+    
+</div>
+<div class="content" style="width: 100%; display:block;" role="main">
+  <router-outlet></router-outlet>
+</div>
+
+
+
+
+<footer class="pmd-footer bg-dark pmd-footer-dark">
+  <div class="container">
+      <div class="pmd-site-info text-center">
+          <a href="javascript:void(0);" class="temp"><strong>By Harshal S Zodape</strong></a> 
+      </div>
+  </div>
+</footer>
+<!-- <app-home></app-home> -->
+
+
+

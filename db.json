@@ -1,0 +1,147 @@
+{
+  "user": [
+    {
+      "id": "harshalsz",
+      "name": "harshal",
+      "password": "Hasr@1234",
+      "email": "477har@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "tony",
+      "name": "rdj",
+      "password": "Hasr@1234",
+      "email": "tony@gmail.com",
+      "gender": "male",
+      "role": "staff",
+      "isactive": true
+    },
+    {
+      "id": "chrisHem",
+      "name": "Thor",
+      "password": "Thor@1234",
+      "email": "thor@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isactive": false
+    }
+  ],
+  "role": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "tech",
+      "name": "Technician"
+    },
+    {
+      "code": "staff",
+      "name": "Staff"
+    },
+    {
+      "code": "vendor",
+      "name": "Vendor"
+    }
+  ],
+  "menu": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "customer",
+      "name": "Customer"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "user",
+      "menu": "user",
+      "haveedit": false,
+      "haveadd": false,
+      "havedelete": false
+    },
+    {
+      "role": "user",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": false
+    }
+  ],
+  "customer": [
+    {
+      "id": 1,
+      "name": "Mohit",
+      "Creditlimit": 2000,
+      "noOrder": 2
+    },
+    {
+      "id": 2,
+      "name": "rahul",
+      "Creditlimit": 1000,
+      "noOrder": 6
+    },
+    {
+      "id": 3,
+      "name": "Jay",
+      "Creditlimit": 7000,
+      "noOrder": 3
+    },
+    {
+      "id": 4,
+      "name": "Kartik",
+      "Creditlimit": 5000,
+      "noOrder": 9
+    },
+    {
+      "id": 5,
+      "name": "robert",
+      "Creditlimit": 1000,
+      "noOrder": 4
+    }
+  ],
+  "product": [
+    {
+      "id": 101,
+      "name": "bottle",
+      "price": 100,
+      "noitem": 5
+    },
+    {
+      "id": 104,
+      "name": "Chair",
+      "price": 2000,
+      "noitem": 2
+    },
+    {
+      "id": 103,
+      "name": "Shoes",
+      "price": 5000,
+      "noitem": 1
+    },
+    {
+      "id": 102,
+      "name": "Bags",
+      "price": 7000,
+      "noitem": 1
+    }
+  ]
+}
